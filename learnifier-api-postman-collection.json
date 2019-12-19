@@ -1,0 +1,1160 @@
+{
+    "id": "73de22ce43cfe97ed4b2c706e7f5fcce",
+    "name": "Learnifier API",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "67f18efd5649d5d9d419712cc67bf6e2",
+            "name": "Lists all global course design templates",
+            "url": "httplearnifier.com\/\/coursedesigns",
+            "description": "Lists all global course design templates. Only api callers that have full access can call this method.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "rawModeData": ""
+        },
+        {
+            "id": "f823a60ce6f66afafb5c9276d88a7c60",
+            "name": "Get Organization Unit with External Id",
+            "url": "httplearnifier.com\/\/extorgunit",
+            "description": "Returns information about the organization unit with the specified external id.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "extid",
+                    "description": "The external id of the organization unit",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "rawModeData": ""
+        },
+        {
+            "id": "f4acfcac85cb5c509cbe13c987a045a0",
+            "name": "Gets a participation by external id",
+            "url": "httplearnifier.com\/\/extparticipation",
+            "description": "Gets a participation by external id.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "extid",
+                    "description": "The external id of the organization unit",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "rawModeData": ""
+        },
+        {
+            "id": "6a22038261c40265849cf3fab8655922",
+            "name": "Gets Organization Unit by external id",
+            "url": "httplearnifier.com\/\/extproject",
+            "description": "Gets an Organization Unit by external id",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "extid",
+                    "description": "The external id of the organization unit",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "rawModeData": ""
+        },
+        {
+            "id": "36b227099e542603bf0d7f0091a67f40",
+            "name": "Gets a user by external id",
+            "url": "httplearnifier.com\/\/extuser",
+            "description": "Gets a user by external id.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "extid",
+                    "description": "The external id of the organization unit",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "rawModeData": ""
+        },
+        {
+            "id": "22df03d1dcb16940cf0d06b0ee61b662",
+            "name": "List Global User Groups.",
+            "url": "httplearnifier.com\/\/globalusergroups",
+            "description": "Returns a list of Global User Groups. Global User Groups are set up for the realm, and will generate groups that can be used on the client level.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "rawModeData": ""
+        },
+        {
+            "id": "dcba9ca7c7e3365bee752fc4c6628dde",
+            "name": "List of all users in group.",
+            "url": "httplearnifier.com\/\/globalusergroups\/{groupid}\/members",
+            "description": "Returns a list of all members in User Groups that are based on the Global Group with this groupid.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "groupid",
+                    "description": "ID of group",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "rawModeData": ""
+        },
+        {
+            "id": "595786516d73d5f0d15e86a231a991d5",
+            "name": "Organization Units",
+            "url": "httplearnifier.com\/\/orgunits",
+            "description": "The orgunits endpoint returns information about the available organization units (orgunits).\nThe response includes the display name, internal and external id and client number.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "rawModeData": ""
+        },
+        {
+            "id": "320de5cc952cf1ce0e0ed72fbce8c8a5",
+            "name": "Adds an Organization Unit",
+            "url": "httplearnifier.com\/\/orgunits",
+            "description": "Adds an Organization Unit",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "rawModeData": ""
+        },
+        {
+            "id": "4c5706641d864c9dfd2ddb5137822f06",
+            "name": "Get Organization Unit",
+            "url": "httplearnifier.com\/\/orgunits\/{orgid}",
+            "description": "Returns information about the specified organization unit.\nThe response includes the display name, internal and external id and client number.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "orgid",
+                    "description": "Id of the organization unit",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "rawModeData": ""
+        },
+        {
+            "id": "926bc8a1371575dbfcd16cbffbadde7b",
+            "name": "Updates an Organization Unit",
+            "url": "httplearnifier.com\/\/orgunits\/{orgid}",
+            "description": "Adds an Organization Unit",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "patch",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "orgid",
+                    "description": "Id of the organization unit",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "rawModeData": ""
+        },
+        {
+            "id": "fb45a6f6646a6a814be635c2100f653b",
+            "name": "Organization Unit Projects",
+            "url": "httplearnifier.com\/\/orgunits\/{orgid}\/projects",
+            "description": "Returns the available projects for the organization unit\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "orgid",
+                    "description": "Id of the organization unit",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "rawModeData": ""
+        },
+        {
+            "id": "721497eb0af1c8f3071ccf70d6143a5d",
+            "name": "Create project",
+            "url": "httplearnifier.com\/\/orgunits\/{orgid}\/projects",
+            "description": "Creates a new project\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "orgid",
+                    "description": "Id of the organization unit",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "rawModeData": ""
+        },
+        {
+            "id": "96c61da0303612a425c2287cc70ccf96",
+            "name": "Deletes the project",
+            "url": "httplearnifier.com\/\/orgunits\/{orgid}\/projects\/{projectid}",
+            "description": "Deletes the project. The project can only be deleted if the project do not contain any participants.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "orgid",
+                    "description": "Id of the organization unit",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "projectid",
+                    "description": "Id of the project",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "rawModeData": ""
+        },
+        {
+            "id": "f608af104bbb72dcec221536933c6806",
+            "name": "Project information",
+            "url": "httplearnifier.com\/\/orgunits\/{orgid}\/projects\/{projectid}",
+            "description": "Returns project information\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "orgid",
+                    "description": "Id of the organization unit",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "projectid",
+                    "description": "Id of the project",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "rawModeData": ""
+        },
+        {
+            "id": "d1092f922fb7447e81bef58300089f3f",
+            "name": "Update project information",
+            "url": "httplearnifier.com\/\/orgunits\/{orgid}\/projects\/{projectid}",
+            "description": "Updates information about a project. Values are only updated if the fields are specified in the input\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "patch",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "orgid",
+                    "description": "Id of the organization unit",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "projectid",
+                    "description": "Id of the project",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "rawModeData": ""
+        },
+        {
+            "id": "b9e5f812900de8a91216a308b52e7ee2",
+            "name": "Project participants",
+            "url": "httplearnifier.com\/\/orgunits\/{orgid}\/projects\/{projectid}\/participants",
+            "description": "Returns project participants\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "orgid",
+                    "description": "Id of the organization unit",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "projectid",
+                    "description": "Id of the project",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "rawModeData": ""
+        },
+        {
+            "id": "24551c8177543d1c58b4f5d2b398d964",
+            "name": "Add participant",
+            "url": "httplearnifier.com\/\/orgunits\/{orgid}\/projects\/{projectid}\/participants",
+            "description": "Add a user to the project. Participant information is created for the user. In the body object, only one of either email or userid must be specified. The participant needs to be activated before it the user can access it.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "orgid",
+                    "description": "Id of the organization unit",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "projectid",
+                    "description": "Id of the project",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "rawModeData": ""
+        },
+        {
+            "id": "ff01651aa4f43e4523c31987101b7617",
+            "name": "Deletes a participant",
+            "url": "httplearnifier.com\/\/orgunits\/{orgid}\/projects\/{projectid}\/participants\/${participantId}",
+            "description": "Deletes a participant. The user itself will still remain but any state related to the project will be deleted. \nIt might not be possible due to constraints from the products in the project to delete the participant. However\nthis can only be determined at the time of the delete. If a delete fails the participant will have their inError\nflag set.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "orgid",
+                    "description": "Id of the organization unit",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "projectid",
+                    "description": "Id of the project",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "participantId",
+                    "description": "Participant id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "rawModeData": ""
+        },
+        {
+            "id": "225b98516b5e044d248fda1a767f00c8",
+            "name": "Activate participant",
+            "url": "httplearnifier.com\/\/orgunits\/{orgid}\/projects\/{projectid}\/participants\/${participantId}\/activate",
+            "description": "Activates a participant so that it can be used\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "orgid",
+                    "description": "Id of the organization unit",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "projectid",
+                    "description": "Id of the project",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "participantId",
+                    "description": "Participant id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "rawModeData": ""
+        },
+        {
+            "id": "682619286550f9600817e5bc1c034ab4",
+            "name": "Participant login link",
+            "url": "httplearnifier.com\/\/orgunits\/{orgid}\/projects\/{projectid}\/participants\/${participantId}\/loginlink",
+            "description": "Returns a single sign on link for the participant. The link is only usable once and should be used directly. The link expires after a few minutes.\n\nThis operation requires the *login link* permission.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "orgid",
+                    "description": "Id of the organization unit",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "projectid",
+                    "description": "Id of the project",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "participantId",
+                    "description": "Participant id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "rawModeData": ""
+        },
+        {
+            "id": "954db84607d94c39db64350b4d385ea1",
+            "name": "Project team members",
+            "url": "httplearnifier.com\/\/orgunits\/{orgid}\/projects\/{projectid}\/teammembers",
+            "description": "Returns the project team members. A team member is a ....\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "orgid",
+                    "description": "Id of the organization unit",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "projectid",
+                    "description": "Id of the project",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "rawModeData": ""
+        },
+        {
+            "id": "cd06a7a595d9454de18aa7e6bdf32dde",
+            "name": "List User Groups.",
+            "url": "httplearnifier.com\/\/orgunits\/{orgid}\/usergroups",
+            "description": "Returns a list of User Groups for the org unit.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "orgid",
+                    "description": "Id of the organization unit",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "rawModeData": ""
+        },
+        {
+            "id": "ebe891c0a45ed464232823dcaba0e445",
+            "name": "Create a User Group.",
+            "url": "httplearnifier.com\/\/orgunits\/{orgid}\/usergroups",
+            "description": "Create a User Group.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "orgid",
+                    "description": "Id of the organization unit",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "rawModeData": ""
+        },
+        {
+            "id": "13c1bffe64ab2cc34dcc7370cf741fae",
+            "name": "Get user group",
+            "url": "httplearnifier.com\/\/orgunits\/{orgid}\/usergroups\/{groupid}",
+            "description": "Returns single User Group.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "orgid",
+                    "description": "Id of the organization unit",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "groupid",
+                    "description": "ID of group",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "rawModeData": ""
+        },
+        {
+            "id": "f8591940fa83e3c70c57d21d81565dce",
+            "name": "List of all users in group.",
+            "url": "httplearnifier.com\/\/orgunits\/{orgid}\/usergroups\/{groupid}\/members",
+            "description": "Returns a list of all members in User Groups that are based on the Global Group with this groupid.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "orgid",
+                    "description": "Id of the organization unit",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "groupid",
+                    "description": "ID of group",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "rawModeData": ""
+        },
+        {
+            "id": "fddd23af27cea17a6f50a0f73d3b72b0",
+            "name": "Add user group member.",
+            "url": "httplearnifier.com\/\/orgunits\/{orgid}\/usergroups\/{groupid}\/members",
+            "description": "Adds a user to user group.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "orgid",
+                    "description": "Id of the organization unit",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "groupid",
+                    "description": "ID of group",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "rawModeData": ""
+        },
+        {
+            "id": "d7411e6c9b7756054c33ad1031fc484f",
+            "name": "Remove user group member.",
+            "url": "httplearnifier.com\/\/orgunits\/{orgid}\/usergroups\/{groupid}\/members\/{uuid}",
+            "description": "Removes a user from a user group.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "orgid",
+                    "description": "Id of the organization unit",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "groupid",
+                    "description": "ID of group",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "uuid",
+                    "description": "UUID of user to remove from group.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "rawModeData": ""
+        },
+        {
+            "id": "074302b44bd3688d41946f1174aaed52",
+            "name": "Lists all users",
+            "url": "httplearnifier.com\/\/users",
+            "description": "Lists all users. Only api callers that have full access can call this method.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "limit",
+                    "description": "The maximum number of users to return",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "The offset to start listing users from",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "rawModeData": ""
+        },
+        {
+            "id": "3f15049d78aad240b7a51393f6face18",
+            "name": "Adds a user",
+            "url": "httplearnifier.com\/\/users",
+            "description": "Adds a user. No two users can have the same email address. Email is saved WITH case but compared regardless of case. Email can be changed for a user assuming it doesn't cause a conflict.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "rawModeData": ""
+        },
+        {
+            "id": "afc91077c509c1678bb58f6969f5b572",
+            "name": "User information",
+            "url": "httplearnifier.com\/\/users\/{userid}",
+            "description": "Returns information about a user\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "userid",
+                    "description": "A user id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "rawModeData": ""
+        },
+        {
+            "id": "32ce0d0e83a3de3c66600b0c3742aa23",
+            "name": "Updates user information",
+            "url": "httplearnifier.com\/\/users\/{userid}",
+            "description": "Updates a user. All values that have a key defined in the input will be set. So if a value should not be updated omit it totally from the input, otherwise it will be unset.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "patch",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "userid",
+                    "description": "A user id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "rawModeData": ""
+        },
+        {
+            "id": "b01f6dcf41bcf5f6adbd459d1d82e47b",
+            "name": "User profile picture",
+            "url": "httplearnifier.com\/\/users\/{userid}\/pic?key={APIKEY}",
+            "description": "Returns a thumbnail picture of the user. This can either be a selected picture or an auto generated image. This method doesn't require a full sign in. The api key is sufficient.\nThe image is square and is likely, but not necessary, to be in 128x128 PNG format. However the format will always be either PNG, JPEG or GIF.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "userid",
+                    "description": "A user id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "APIKEY",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "rawModeData": ""
+        },
+        {
+            "id": "53cbc84e1d46c7caa04a6e2f15fd619a",
+            "name": "Returns information about the projects the user is a participant in.",
+            "url": "httplearnifier.com\/\/users\/{userid}\/projectParticipations",
+            "description": "Returns information about the projects the user is a participant in. Only the projects that the current token have access to will be listed.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "userid",
+                    "description": "A user id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "rawModeData": ""
+        }
+    ]
+}
