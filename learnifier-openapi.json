@@ -1,0 +1,1435 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "1.1.0",
+        "title": "Learnifier",
+        "description": "",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpslearnifier.com\/"
+    ],
+    "paths": {
+        "\/coursedesigns": {
+            "get": {
+                "summary": "Lists all global course design templates",
+                "description": "Lists all global course design templates. Only api callers that have full access can call this method.",
+                "operationId": "CoursedesignsGet",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/extorgunit": {
+            "get": {
+                "summary": "Get Organization Unit with External Id",
+                "description": "Returns information about the organization unit with the specified external id.\n",
+                "operationId": "ExtorgunitGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "extid",
+                        "in": "query",
+                        "description": "The external id of the organization unit"
+                    }
+                ]
+            }
+        },
+        "\/extparticipation": {
+            "get": {
+                "summary": "Gets a participation by external id",
+                "description": "Gets a participation by external id.",
+                "operationId": "ExtparticipationGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "extid",
+                        "in": "query",
+                        "description": "The external id of the organization unit"
+                    }
+                ]
+            }
+        },
+        "\/extproject": {
+            "get": {
+                "summary": "Gets Organization Unit by external id",
+                "description": "Gets an Organization Unit by external id",
+                "operationId": "ExtprojectGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "extid",
+                        "in": "query",
+                        "description": "The external id of the organization unit"
+                    }
+                ]
+            }
+        },
+        "\/extuser": {
+            "get": {
+                "summary": "Gets a user by external id",
+                "description": "Gets a user by external id.",
+                "operationId": "ExtuserGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "extid",
+                        "in": "query",
+                        "description": "The external id of the organization unit"
+                    }
+                ]
+            }
+        },
+        "\/globalusergroups": {
+            "get": {
+                "summary": "List Global User Groups.",
+                "description": "Returns a list of Global User Groups. Global User Groups are set up for the realm, and will generate groups that can be used on the client level.\n",
+                "operationId": "GlobalusergroupsGet",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/globalusergroups\/{groupid}\/members": {
+            "get": {
+                "summary": "List of all users in group.",
+                "description": "Returns a list of all members in User Groups that are based on the Global Group with this groupid.\n",
+                "operationId": "GlobalusergroupsGroupidMembersGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "groupid",
+                        "in": "path",
+                        "description": "ID of group"
+                    }
+                ]
+            }
+        },
+        "\/orgunits": {
+            "get": {
+                "summary": "Organization Units",
+                "description": "The orgunits endpoint returns information about the available organization units (orgunits).\nThe response includes the display name, internal and external id and client number.\n",
+                "operationId": "OrgunitsGet",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "post": {
+                "summary": "Adds an Organization Unit",
+                "description": "Adds an Organization Unit",
+                "operationId": "OrgunitsPost",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/orgunits\/{orgid}": {
+            "get": {
+                "summary": "Get Organization Unit",
+                "description": "Returns information about the specified organization unit.\nThe response includes the display name, internal and external id and client number.\n",
+                "operationId": "OrgunitsOrgidGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "orgid",
+                        "in": "path",
+                        "description": "Id of the organization unit"
+                    }
+                ]
+            },
+            "patch": {
+                "summary": "Updates an Organization Unit",
+                "description": "Adds an Organization Unit",
+                "operationId": "OrgunitsOrgidPatch",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    },
+                    {
+                        "name": "orgid",
+                        "in": "path",
+                        "description": "Id of the organization unit"
+                    }
+                ]
+            }
+        },
+        "\/orgunits\/{orgid}\/projects": {
+            "get": {
+                "summary": "Organization Unit Projects",
+                "description": "Returns the available projects for the organization unit\n",
+                "operationId": "OrgunitsOrgidProjectsGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "orgid",
+                        "in": "path",
+                        "description": "Id of the organization unit"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Create project",
+                "description": "Creates a new project\n",
+                "operationId": "OrgunitsOrgidProjectsPost",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "orgid",
+                        "in": "path",
+                        "description": "Id of the organization unit"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/orgunits\/{orgid}\/projects\/{projectid}": {
+            "delete": {
+                "summary": "Deletes the project",
+                "description": "Deletes the project. The project can only be deleted if the project do not contain any participants.\n",
+                "operationId": "OrgunitsOrgidProjectsProjectidDelete",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "orgid",
+                        "in": "path",
+                        "description": "Id of the organization unit"
+                    },
+                    {
+                        "name": "projectid",
+                        "in": "path",
+                        "description": "Id of the project"
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Project information",
+                "description": "Returns project information\n",
+                "operationId": "OrgunitsOrgidProjectsProjectidGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "orgid",
+                        "in": "path",
+                        "description": "Id of the organization unit"
+                    },
+                    {
+                        "name": "projectid",
+                        "in": "path",
+                        "description": "Id of the project"
+                    }
+                ]
+            },
+            "patch": {
+                "summary": "Update project information",
+                "description": "Updates information about a project. Values are only updated if the fields are specified in the input\n",
+                "operationId": "OrgunitsOrgidProjectsProjectidPatch",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "orgid",
+                        "in": "path",
+                        "description": "Id of the organization unit"
+                    },
+                    {
+                        "name": "projectid",
+                        "in": "path",
+                        "description": "Id of the project"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/orgunits\/{orgid}\/projects\/{projectid}\/participants": {
+            "get": {
+                "summary": "Project participants",
+                "description": "Returns project participants\n",
+                "operationId": "OrgunitsOrgidProjectsProjectidParticipantsGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "orgid",
+                        "in": "path",
+                        "description": "Id of the organization unit"
+                    },
+                    {
+                        "name": "projectid",
+                        "in": "path",
+                        "description": "Id of the project"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Add participant",
+                "description": "Add a user to the project. Participant information is created for the user. In the body object, only one of either email or userid must be specified. The participant needs to be activated before it the user can access it.\n",
+                "operationId": "OrgunitsOrgidProjectsProjectidParticipantsPost",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "orgid",
+                        "in": "path",
+                        "description": "Id of the organization unit"
+                    },
+                    {
+                        "name": "projectid",
+                        "in": "path",
+                        "description": "Id of the project"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/orgunits\/{orgid}\/projects\/{projectid}\/participants\/${participantId}": {
+            "delete": {
+                "summary": "Deletes a participant",
+                "description": "Deletes a participant. The user itself will still remain but any state related to the project will be deleted. \nIt might not be possible due to constraints from the products in the project to delete the participant. However\nthis can only be determined at the time of the delete. If a delete fails the participant will have their inError\nflag set.\n",
+                "operationId": "OrgunitsOrgidProjectsProjectidParticipantsParticipantIdDelete",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "orgid",
+                        "in": "path",
+                        "description": "Id of the organization unit"
+                    },
+                    {
+                        "name": "projectid",
+                        "in": "path",
+                        "description": "Id of the project"
+                    },
+                    {
+                        "name": "participantId",
+                        "in": "path",
+                        "description": "Participant id"
+                    }
+                ]
+            }
+        },
+        "\/orgunits\/{orgid}\/projects\/{projectid}\/participants\/${participantId}\/activate": {
+            "post": {
+                "summary": "Activate participant",
+                "description": "Activates a participant so that it can be used\n",
+                "operationId": "OrgunitsOrgidProjectsProjectidParticipantsParticipantIdActivatePost",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "orgid",
+                        "in": "path",
+                        "description": "Id of the organization unit"
+                    },
+                    {
+                        "name": "projectid",
+                        "in": "path",
+                        "description": "Id of the project"
+                    },
+                    {
+                        "name": "participantId",
+                        "in": "path",
+                        "description": "Participant id"
+                    }
+                ]
+            }
+        },
+        "\/orgunits\/{orgid}\/projects\/{projectid}\/participants\/${participantId}\/loginlink": {
+            "post": {
+                "summary": "Participant login link",
+                "description": "Returns a single sign on link for the participant. The link is only usable once and should be used directly. The link expires after a few minutes.\n\nThis operation requires the *login link* permission.\n",
+                "operationId": "OrgunitsOrgidProjectsProjectidParticipantsParticipantIdLoginlinkPost",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "orgid",
+                        "in": "path",
+                        "description": "Id of the organization unit"
+                    },
+                    {
+                        "name": "projectid",
+                        "in": "path",
+                        "description": "Id of the project"
+                    },
+                    {
+                        "name": "participantId",
+                        "in": "path",
+                        "description": "Participant id"
+                    }
+                ]
+            }
+        },
+        "\/orgunits\/{orgid}\/projects\/{projectid}\/teammembers": {
+            "get": {
+                "summary": "Project team members",
+                "description": "Returns the project team members. A team member is a ....\n",
+                "operationId": "OrgunitsOrgidProjectsProjectidTeammembersGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "orgid",
+                        "in": "path",
+                        "description": "Id of the organization unit"
+                    },
+                    {
+                        "name": "projectid",
+                        "in": "path",
+                        "description": "Id of the project"
+                    }
+                ]
+            }
+        },
+        "\/orgunits\/{orgid}\/usergroups": {
+            "get": {
+                "summary": "List User Groups.",
+                "description": "Returns a list of User Groups for the org unit.\n",
+                "operationId": "OrgunitsOrgidUsergroupsGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "orgid",
+                        "in": "path",
+                        "description": "Id of the organization unit"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Create a User Group.",
+                "description": "Create a User Group.\n",
+                "operationId": "OrgunitsOrgidUsergroupsPost",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    },
+                    {
+                        "name": "orgid",
+                        "in": "path",
+                        "description": "Id of the organization unit"
+                    }
+                ]
+            }
+        },
+        "\/orgunits\/{orgid}\/usergroups\/{groupid}": {
+            "get": {
+                "summary": "Get user group",
+                "description": "Returns single User Group.\n",
+                "operationId": "OrgunitsOrgidUsergroupsGroupidGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "orgid",
+                        "in": "path",
+                        "description": "Id of the organization unit"
+                    },
+                    {
+                        "name": "groupid",
+                        "in": "path",
+                        "description": "ID of group"
+                    }
+                ]
+            }
+        },
+        "\/orgunits\/{orgid}\/usergroups\/{groupid}\/members": {
+            "get": {
+                "summary": "List of all users in group.",
+                "description": "Returns a list of all members in User Groups that are based on the Global Group with this groupid.\n",
+                "operationId": "OrgunitsOrgidUsergroupsGroupidMembersGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "orgid",
+                        "in": "path",
+                        "description": "Id of the organization unit"
+                    },
+                    {
+                        "name": "groupid",
+                        "in": "path",
+                        "description": "ID of group"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Add user group member.",
+                "description": "Adds a user to user group.\n",
+                "operationId": "OrgunitsOrgidUsergroupsGroupidMembersPost",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    },
+                    {
+                        "name": "orgid",
+                        "in": "path",
+                        "description": "Id of the organization unit"
+                    },
+                    {
+                        "name": "groupid",
+                        "in": "path",
+                        "description": "ID of group"
+                    }
+                ]
+            }
+        },
+        "\/orgunits\/{orgid}\/usergroups\/{groupid}\/members\/{uuid}": {
+            "delete": {
+                "summary": "Remove user group member.",
+                "description": "Removes a user from a user group.\n",
+                "operationId": "OrgunitsOrgidUsergroupsGroupidMembersUuidDelete",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "orgid",
+                        "in": "path",
+                        "description": "Id of the organization unit"
+                    },
+                    {
+                        "name": "groupid",
+                        "in": "path",
+                        "description": "ID of group"
+                    },
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "description": "UUID of user to remove from group."
+                    }
+                ]
+            }
+        },
+        "\/users": {
+            "get": {
+                "summary": "Lists all users",
+                "description": "Lists all users. Only api callers that have full access can call this method.",
+                "operationId": "UsersGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "The maximum number of users to return"
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "The offset to start listing users from"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Adds a user",
+                "description": "Adds a user. No two users can have the same email address. Email is saved WITH case but compared regardless of case. Email can be changed for a user assuming it doesn't cause a conflict.",
+                "operationId": "UsersPost",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/users\/{userid}": {
+            "get": {
+                "summary": "User information",
+                "description": "Returns information about a user\n",
+                "operationId": "UsersUseridGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "userid",
+                        "in": "path",
+                        "description": "A user id"
+                    }
+                ]
+            },
+            "patch": {
+                "summary": "Updates user information",
+                "description": "Updates a user. All values that have a key defined in the input will be set. So if a value should not be updated omit it totally from the input, otherwise it will be unset.",
+                "operationId": "UsersUseridPatch",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "userid",
+                        "in": "path",
+                        "description": "A user id"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/users\/{userid}\/pic?key={APIKEY}": {
+            "get": {
+                "summary": "User profile picture",
+                "description": "Returns a thumbnail picture of the user. This can either be a selected picture or an auto generated image. This method doesn't require a full sign in. The api key is sufficient.\nThe image is square and is likely, but not necessary, to be in 128x128 PNG format. However the format will always be either PNG, JPEG or GIF.\n",
+                "operationId": "UsersUseridPicKeyAPIKEYGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "userid",
+                        "in": "path",
+                        "description": "A user id"
+                    },
+                    {
+                        "name": "APIKEY",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/users\/{userid}\/projectParticipations": {
+            "get": {
+                "summary": "Returns information about the projects the user is a participant in.",
+                "description": "Returns information about the projects the user is a participant in. Only the projects that the current token have access to will be listed.\n",
+                "operationId": "UsersUseridProjectParticipationsGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "userid",
+                        "in": "path",
+                        "description": "A user id"
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "ActivationError": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "failures": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "field": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "message": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "AddOrganizationUnit": {
+                "type": "object",
+                "properties": {
+                    "caller": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "clientNumber": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "country": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "displayName": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "externalId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "parent": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "AddOrganizationUnitResponse": {
+                "type": "object",
+                "properties": {
+                    "ouId": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "AddParticipant": {
+                "type": "object",
+                "properties": {
+                    "email": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "extid": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "userid": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "AddProject": {
+                "type": "object",
+                "properties": {
+                    "country": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "createdBy": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "designId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "locale": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "note": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "timezone": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "userDescription": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "userTitle": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "AddUser": {
+                "type": "object",
+                "properties": {
+                    "displayName": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "externalId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "firstName": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "hardLock": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "homeOrg": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "locale": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "primaryEmail": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "AddUserGroup": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "parent": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "AddUserGroupMember": {
+                "type": "object",
+                "properties": {
+                    "uuid": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "AddUserResponse": {
+                "type": "object",
+                "properties": {
+                    "userid": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "BackOfficeRole": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "ClientRole": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "ClientRoles": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "roles": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "CourseDesign": {
+                "type": "object",
+                "properties": {
+                    "created": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "createdBy": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "enabled": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "locale": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "locked": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "lockedBy": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "lockedDesign": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "softid": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "sticky": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "tags": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Error": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "field": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "message": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GlobalUserGroup": {
+                "type": "object",
+                "properties": {
+                    "created": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "createdBy": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "parent": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "softiId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "updated": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "updatedBy": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "GroupId": {
+                "type": "object",
+                "properties": {
+                    "groupId": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "LoginLink": {
+                "type": "object",
+                "properties": {
+                    "link": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "OrgUnit": {
+                "type": "object",
+                "properties": {
+                    "externalId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "parentId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "OrgUnits": {
+                "type": "object",
+                "properties": {
+                    "orgUnits": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Participation": {
+                "type": "object",
+                "properties": {
+                    "accessLink": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "activated": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "activitiesCompleted": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "activitiesTotal": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "errorMessage": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "expiration": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "externalId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "firstAccess": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "firstActivation": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "firstMail": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "inError": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "lastAccess": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "lastActivation": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "lastMail": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "projectId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "userid": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "ProductFailure": {
+                "type": "object",
+                "properties": {
+                    "message": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "productId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Project": {
+                "type": "object",
+                "properties": {
+                    "adminUrl": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "country": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "created": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "createdBy": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "designId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "externalId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "locale": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "note": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "orgId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "timezone": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "userDescription": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "userTitle": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "ProjectTeamMember": {
+                "type": "object",
+                "properties": {
+                    "roles": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "userid": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "TeamRole": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "roleid": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "UpdateOrganizationUnit": {
+                "type": "object",
+                "properties": {
+                    "caller": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "clientNumber": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "country": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "displayName": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "externalId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "parent": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "UpdateProject": {
+                "type": "object",
+                "properties": {
+                    "country": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "locale": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "note": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "timezone": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "userDescription": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "userTitle": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "User": {
+                "type": "object",
+                "properties": {
+                    "authorizationPossible": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "displayName": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "externalId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "firstLogin": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "firstName": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "hardLock": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "homeOrg": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "lastLogin": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "lastName": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "locked": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "primaryEmail": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "UserGroup": {
+                "type": "object",
+                "properties": {
+                    "children": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "globalId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "groupId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "parent": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "userGroup": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "UserId": {
+                "type": "object",
+                "properties": {
+                    "uuid": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "UserParticipationInfo": {
+                "type": "object",
+                "properties": {
+                    "accessLink": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "activated": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "activitiesCompleted": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "activitiesTotal": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "errorMessage": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "expiration": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "externalId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "firstAccess": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "firstActivation": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "firstMail": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "inError": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "lastAccess": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "lastActivation": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "lastMail": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "projectId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "projectName": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "projectOrgId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "projectStatus": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "projectThumbnail": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "projectUserTitle": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "UserPreferences": {
+                "type": "object",
+                "properties": {
+                    "locale": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            }
+        }
+    }
+}
