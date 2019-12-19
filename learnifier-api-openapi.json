@@ -1,0 +1,1811 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "1.1.0",
+        "title": "Learnifier API",
+        "description": "",
+        "termsOfService": "http:\/\/exmple.com\/license\/"
+    },
+    "servers": [
+        "httplearnifier.com\/"
+    ],
+    "paths": {
+        "\/coursedesigns": {
+            "get": {
+                "summary": "Lists all global course design templates",
+                "description": "Lists all global course design templates. Only api callers that have full access can call this method.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "List with course design templates",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/OrgUnit"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/extorgunit": {
+            "get": {
+                "summary": "Get Organization Unit with External Id",
+                "description": "Returns information about the organization unit with the specified external id.\n",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "extid",
+                        "in": "query",
+                        "description": "The external id of the organization unit"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "List with course design templates",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/OrgUnit"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/extparticipation": {
+            "get": {
+                "summary": "Gets a participation by external id",
+                "description": "Gets a participation by external id.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "extid",
+                        "in": "query",
+                        "description": "The external id of the organization unit"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "List with course design templates",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/OrgUnit"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/extproject": {
+            "get": {
+                "summary": "Gets Organization Unit by external id",
+                "description": "Gets an Organization Unit by external id",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "extid",
+                        "in": "query",
+                        "description": "The external id of the organization unit"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "List with course design templates",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/OrgUnit"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/extuser": {
+            "get": {
+                "summary": "Gets a user by external id",
+                "description": "Gets a user by external id.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "extid",
+                        "in": "query",
+                        "description": "The external id of the organization unit"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "List with course design templates",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/OrgUnit"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/globalusergroups": {
+            "get": {
+                "summary": "List Global User Groups.",
+                "description": "Returns a list of Global User Groups. Global User Groups are set up for the realm, and will generate groups that can be used on the client level.\n",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "List with course design templates",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/OrgUnit"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/globalusergroups\/{groupid}\/members": {
+            "get": {
+                "summary": "List of all users in group.",
+                "description": "Returns a list of all members in User Groups that are based on the Global Group with this groupid.\n",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "groupid",
+                        "in": "path",
+                        "description": "ID of group"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "List with course design templates",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/OrgUnit"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/orgunits": {
+            "get": {
+                "summary": "Organization Units",
+                "description": "The orgunits endpoint returns information about the available organization units (orgunits).\nThe response includes the display name, internal and external id and client number.\n",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "List with course design templates",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/OrgUnit"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "summary": "Adds an Organization Unit",
+                "description": "Adds an Organization Unit",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "List with course design templates",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/OrgUnit"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/orgunits\/{orgid}": {
+            "get": {
+                "summary": "Get Organization Unit",
+                "description": "Returns information about the specified organization unit.\nThe response includes the display name, internal and external id and client number.\n",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "orgid",
+                        "in": "path",
+                        "description": "Id of the organization unit"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "List with course design templates",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/OrgUnit"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "patch": {
+                "summary": "Updates an Organization Unit",
+                "description": "Adds an Organization Unit",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "orgid",
+                        "in": "path",
+                        "description": "Id of the organization unit"
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Organization Unit was successfully updated",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Project"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/orgunits\/{orgid}\/projects": {
+            "get": {
+                "summary": "Organization Unit Projects",
+                "description": "Returns the available projects for the organization unit\n",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "orgid",
+                        "in": "path",
+                        "description": "Id of the organization unit"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "List with course design templates",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/OrgUnit"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "summary": "Create project",
+                "description": "Creates a new project\n",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "orgid",
+                        "in": "path",
+                        "description": "Id of the organization unit"
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Organization Unit was successfully updated",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Project"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/orgunits\/{orgid}\/projects\/{projectid}": {
+            "delete": {
+                "summary": "Deletes the project",
+                "description": "Deletes the project. The project can only be deleted if the project do not contain any participants.\n",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "orgid",
+                        "in": "path",
+                        "description": "Id of the organization unit"
+                    },
+                    {
+                        "name": "projectid",
+                        "in": "path",
+                        "description": "Id of the project"
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "The project was deleted"
+                    }
+                }
+            },
+            "get": {
+                "summary": "Project information",
+                "description": "Returns project information\n",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "orgid",
+                        "in": "path",
+                        "description": "Id of the organization unit"
+                    },
+                    {
+                        "name": "projectid",
+                        "in": "path",
+                        "description": "Id of the project"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "List with course design templates",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/OrgUnit"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "patch": {
+                "summary": "Update project information",
+                "description": "Updates information about a project. Values are only updated if the fields are specified in the input\n",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "orgid",
+                        "in": "path",
+                        "description": "Id of the organization unit"
+                    },
+                    {
+                        "name": "projectid",
+                        "in": "path",
+                        "description": "Id of the project"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "List with course design templates",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/OrgUnit"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/orgunits\/{orgid}\/projects\/{projectid}\/participants": {
+            "get": {
+                "summary": "Project participants",
+                "description": "Returns project participants\n",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "orgid",
+                        "in": "path",
+                        "description": "Id of the organization unit"
+                    },
+                    {
+                        "name": "projectid",
+                        "in": "path",
+                        "description": "Id of the project"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "List with course design templates",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/OrgUnit"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "summary": "Add participant",
+                "description": "Add a user to the project. Participant information is created for the user. In the body object, only one of either email or userid must be specified. The participant needs to be activated before it the user can access it.\n",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "orgid",
+                        "in": "path",
+                        "description": "Id of the organization unit"
+                    },
+                    {
+                        "name": "projectid",
+                        "in": "path",
+                        "description": "Id of the project"
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Organization Unit was successfully updated",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Project"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/orgunits\/{orgid}\/projects\/{projectid}\/participants\/${participantId}": {
+            "delete": {
+                "summary": "Deletes a participant",
+                "description": "Deletes a participant. The user itself will still remain but any state related to the project will be deleted. \nIt might not be possible due to constraints from the products in the project to delete the participant. However\nthis can only be determined at the time of the delete. If a delete fails the participant will have their inError\nflag set.\n",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "orgid",
+                        "in": "path",
+                        "description": "Id of the organization unit"
+                    },
+                    {
+                        "name": "projectid",
+                        "in": "path",
+                        "description": "Id of the project"
+                    },
+                    {
+                        "name": "participantId",
+                        "in": "path",
+                        "description": "Participant id"
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "The project was deleted"
+                    }
+                }
+            }
+        },
+        "\/orgunits\/{orgid}\/projects\/{projectid}\/participants\/${participantId}\/activate": {
+            "post": {
+                "summary": "Activate participant",
+                "description": "Activates a participant so that it can be used\n",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "orgid",
+                        "in": "path",
+                        "description": "Id of the organization unit"
+                    },
+                    {
+                        "name": "projectid",
+                        "in": "path",
+                        "description": "Id of the project"
+                    },
+                    {
+                        "name": "participantId",
+                        "in": "path",
+                        "description": "Participant id"
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Organization Unit was successfully updated",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Project"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/orgunits\/{orgid}\/projects\/{projectid}\/participants\/${participantId}\/loginlink": {
+            "post": {
+                "summary": "Participant login link",
+                "description": "Returns a single sign on link for the participant. The link is only usable once and should be used directly. The link expires after a few minutes.\n\nThis operation requires the *login link* permission.\n",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "orgid",
+                        "in": "path",
+                        "description": "Id of the organization unit"
+                    },
+                    {
+                        "name": "projectid",
+                        "in": "path",
+                        "description": "Id of the project"
+                    },
+                    {
+                        "name": "participantId",
+                        "in": "path",
+                        "description": "Participant id"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "List with course design templates",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/OrgUnit"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/orgunits\/{orgid}\/projects\/{projectid}\/teammembers": {
+            "get": {
+                "summary": "Project team members",
+                "description": "Returns the project team members. A team member is a ....\n",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "orgid",
+                        "in": "path",
+                        "description": "Id of the organization unit"
+                    },
+                    {
+                        "name": "projectid",
+                        "in": "path",
+                        "description": "Id of the project"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "List with course design templates",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/OrgUnit"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/orgunits\/{orgid}\/usergroups": {
+            "get": {
+                "summary": "List User Groups.",
+                "description": "Returns a list of User Groups for the org unit.\n",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "orgid",
+                        "in": "path",
+                        "description": "Id of the organization unit"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "List with course design templates",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/OrgUnit"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "summary": "Create a User Group.",
+                "description": "Create a User Group.\n",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "orgid",
+                        "in": "path",
+                        "description": "Id of the organization unit"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "List with course design templates",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/OrgUnit"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/orgunits\/{orgid}\/usergroups\/{groupid}": {
+            "get": {
+                "summary": "Get user group",
+                "description": "Returns single User Group.\n",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "orgid",
+                        "in": "path",
+                        "description": "Id of the organization unit"
+                    },
+                    {
+                        "name": "groupid",
+                        "in": "path",
+                        "description": "ID of group"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "List with course design templates",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/OrgUnit"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/orgunits\/{orgid}\/usergroups\/{groupid}\/members": {
+            "get": {
+                "summary": "List of all users in group.",
+                "description": "Returns a list of all members in User Groups that are based on the Global Group with this groupid.\n",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "orgid",
+                        "in": "path",
+                        "description": "Id of the organization unit"
+                    },
+                    {
+                        "name": "groupid",
+                        "in": "path",
+                        "description": "ID of group"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "List with course design templates",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/OrgUnit"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "summary": "Add user group member.",
+                "description": "Adds a user to user group.\n",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "orgid",
+                        "in": "path",
+                        "description": "Id of the organization unit"
+                    },
+                    {
+                        "name": "groupid",
+                        "in": "path",
+                        "description": "ID of group"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "List with course design templates",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/OrgUnit"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/orgunits\/{orgid}\/usergroups\/{groupid}\/members\/{uuid}": {
+            "delete": {
+                "summary": "Remove user group member.",
+                "description": "Removes a user from a user group.\n",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "orgid",
+                        "in": "path",
+                        "description": "Id of the organization unit"
+                    },
+                    {
+                        "name": "groupid",
+                        "in": "path",
+                        "description": "ID of group"
+                    },
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "description": "UUID of user to remove from group."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "List with course design templates",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/OrgUnit"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/users": {
+            "get": {
+                "summary": "Lists all users",
+                "description": "Lists all users. Only api callers that have full access can call this method.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "The maximum number of users to return"
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "The offset to start listing users from"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "List with course design templates",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/OrgUnit"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "summary": "Adds a user",
+                "description": "Adds a user. No two users can have the same email address. Email is saved WITH case but compared regardless of case. Email can be changed for a user assuming it doesn't cause a conflict.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "List with course design templates",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/OrgUnit"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/users\/{userid}": {
+            "get": {
+                "summary": "User information",
+                "description": "Returns information about a user\n",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "userid",
+                        "in": "path",
+                        "description": "A user id"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "List with course design templates",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/OrgUnit"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "patch": {
+                "summary": "Updates user information",
+                "description": "Updates a user. All values that have a key defined in the input will be set. So if a value should not be updated omit it totally from the input, otherwise it will be unset.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "userid",
+                        "in": "path",
+                        "description": "A user id"
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Organization Unit was successfully updated",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/Project"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/users\/{userid}\/pic?key={APIKEY}": {
+            "get": {
+                "summary": "User profile picture",
+                "description": "Returns a thumbnail picture of the user. This can either be a selected picture or an auto generated image. This method doesn't require a full sign in. The api key is sufficient.\nThe image is square and is likely, but not necessary, to be in 128x128 PNG format. However the format will always be either PNG, JPEG or GIF.\n",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "userid",
+                        "in": "path",
+                        "description": "A user id"
+                    },
+                    {
+                        "name": "APIKEY",
+                        "in": "path",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "List with course design templates",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/OrgUnit"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/users\/{userid}\/projectParticipations": {
+            "get": {
+                "summary": "Returns information about the projects the user is a participant in.",
+                "description": "Returns information about the projects the user is a participant in. Only the projects that the current token have access to will be listed.\n",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "userid",
+                        "in": "path",
+                        "description": "A user id"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "List with course design templates",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/OrgUnit"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "ActivationError": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "Optional error code",
+                        "type": "integer"
+                    },
+                    "failures": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "field": {
+                        "description": "The input field that the error was related to",
+                        "type": "string"
+                    },
+                    "message": {
+                        "description": "Optional error message",
+                        "type": "string"
+                    }
+                }
+            },
+            "failures": {
+                "type": "array"
+            },
+            "AddOrganizationUnit": {
+                "type": "object",
+                "properties": {
+                    "caller": {
+                        "description": "The id of the user that initiated this operation",
+                        "type": "string"
+                    },
+                    "clientNumber": {
+                        "description": "A client number. Sometimes used when communicating with external system. Must be unique if specified.",
+                        "type": "string"
+                    },
+                    "country": {
+                        "description": "The country code that best matches the organization unit. If unspecified the platform default will be set.",
+                        "type": "string"
+                    },
+                    "displayName": {
+                        "description": "The name shown for the organization unit",
+                        "type": "string"
+                    },
+                    "externalId": {
+                        "description": "The external id (foreign key). Must not exceed 255 characters.",
+                        "type": "string"
+                    },
+                    "parent": {
+                        "description": "A Organization Unit id of the parent Organization Unit (optional).",
+                        "type": "number"
+                    }
+                }
+            },
+            "AddOrganizationUnitResponse": {
+                "type": "object",
+                "properties": {
+                    "ouId": {
+                        "description": "The Organization Unit id",
+                        "type": "number"
+                    }
+                }
+            },
+            "AddParticipant": {
+                "type": "object",
+                "properties": {
+                    "email": {
+                        "description": "The email of the user. If no user exists with the specified email a user will be created with default values and the specified email.",
+                        "type": "string"
+                    },
+                    "extid": {
+                        "description": "An optional external id for the participation",
+                        "type": "string"
+                    },
+                    "userid": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "AddProject": {
+                "type": "object",
+                "properties": {
+                    "country": {
+                        "description": "The country code that best matches the organization unit. If unspecified the platform default will be set.",
+                        "type": "string"
+                    },
+                    "createdBy": {
+                        "description": "The id of the user that created the project. If the creator is not known this value can be *null* or not specified",
+                        "type": "string"
+                    },
+                    "designId": {
+                        "description": "The id of the design this project should be based on",
+                        "type": "integer"
+                    },
+                    "locale": {
+                        "description": "The primary locale for this project. Default value will be used if not specified",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "The internal name of the project",
+                        "type": "string"
+                    },
+                    "note": {
+                        "description": "The internal note field",
+                        "type": "string"
+                    },
+                    "timezone": {
+                        "description": "The main timezone for the project. Do not specify for default timezone",
+                        "type": "string"
+                    },
+                    "userDescription": {
+                        "description": "The description presented to participants. Do not specify for default value from design",
+                        "type": "string"
+                    },
+                    "userTitle": {
+                        "description": "The title presented to participants. Do not specify for default value from design",
+                        "type": "string"
+                    }
+                }
+            },
+            "AddUser": {
+                "type": "object",
+                "properties": {
+                    "displayName": {
+                        "description": "The name shown for the organization unit",
+                        "type": "string"
+                    },
+                    "externalId": {
+                        "description": "The external id (foreign key). Must not exceed 255 characters.",
+                        "type": "string"
+                    },
+                    "firstName": {
+                        "description": "The first (given) name of the user",
+                        "type": "string"
+                    },
+                    "hardLock": {
+                        "description": "True if the user should be locked from the system",
+                        "type": "boolean"
+                    },
+                    "homeOrg": {
+                        "description": "The primary organization for the user. Must match the id of an Organization Unit.",
+                        "type": "number"
+                    },
+                    "lastName": {
+                        "description": "The last name (surname) of the user",
+                        "type": ""
+                    },
+                    "locale": {
+                        "description": "The primary locale for this project. Default value will be used if not specified",
+                        "type": "string"
+                    },
+                    "primaryEmail": {
+                        "description": "The primary email for the user. Used for communication from the platform.",
+                        "type": "string"
+                    }
+                }
+            },
+            "AddUserGroup": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "The internal name of the project",
+                        "type": "string"
+                    },
+                    "parent": {
+                        "description": "Optional ID of parent group.",
+                        "type": "integer"
+                    }
+                }
+            },
+            "AddUserGroupMember": {
+                "type": "object",
+                "properties": {
+                    "uuid": {
+                        "description": "UUID of user to add to this group.",
+                        "type": "string"
+                    }
+                }
+            },
+            "AddUserResponse": {
+                "type": "object",
+                "properties": {
+                    "userid": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "BackOfficeRole": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "The id of the role",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "The internal name of the project",
+                        "type": "string"
+                    }
+                }
+            },
+            "ClientRole": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "The id of the role",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "The internal name of the project",
+                        "type": "string"
+                    }
+                }
+            },
+            "ClientRoles": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "The id of the role",
+                        "type": "string"
+                    },
+                    "roles": {
+                        "description": "A list with client roles",
+                        "type": "array"
+                    }
+                }
+            },
+            "roles": {
+                "type": "object"
+            },
+            "CourseDesign": {
+                "type": "object",
+                "properties": {
+                    "created": {
+                        "description": "The time this entry was created",
+                        "type": "string"
+                    },
+                    "createdBy": {
+                        "description": "The id of the user that created the project. If the creator is not known this value can be *null* or not specified",
+                        "type": "string"
+                    },
+                    "description": {
+                        "description": "Course description",
+                        "type": "string"
+                    },
+                    "enabled": {
+                        "description": "True if this design is enabled for use",
+                        "type": "boolean"
+                    },
+                    "locale": {
+                        "description": "The primary locale for this project. Default value will be used if not specified",
+                        "type": "string"
+                    },
+                    "locked": {
+                        "description": "The time when this entry was locked or null",
+                        "type": "string"
+                    },
+                    "lockedBy": {
+                        "description": "UUID of the user that has locked this design",
+                        "type": "string"
+                    },
+                    "lockedDesign": {
+                        "description": "True if this design is locked for editing",
+                        "type": "boolean"
+                    },
+                    "name": {
+                        "description": "The internal name of the project",
+                        "type": "string"
+                    },
+                    "softid": {
+                        "description": "The soft identifier",
+                        "type": "string"
+                    },
+                    "sticky": {
+                        "description": "True if this design is sticky",
+                        "type": "boolean"
+                    },
+                    "tags": {
+                        "description": "Course tags",
+                        "type": "array"
+                    }
+                }
+            },
+            "tags": {
+                "type": "array"
+            },
+            "Error": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "Optional error code",
+                        "type": "integer"
+                    },
+                    "field": {
+                        "description": "The input field that the error was related to",
+                        "type": "string"
+                    },
+                    "message": {
+                        "description": "Optional error message",
+                        "type": "string"
+                    }
+                }
+            },
+            "GlobalUserGroup": {
+                "type": "object",
+                "properties": {
+                    "created": {
+                        "description": "The time this entry was created",
+                        "type": "string"
+                    },
+                    "createdBy": {
+                        "description": "The id of the user that created the project. If the creator is not known this value can be *null* or not specified",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "The id of the group.",
+                        "type": "integer"
+                    },
+                    "name": {
+                        "description": "The internal name of the project",
+                        "type": "string"
+                    },
+                    "parent": {
+                        "description": "Optional ID of parent group.",
+                        "type": "integer"
+                    },
+                    "softiId": {
+                        "description": "Alternative unique ID for the group.",
+                        "type": "string"
+                    },
+                    "updated": {
+                        "description": "Timestamp when group was last modified.",
+                        "type": "string"
+                    },
+                    "updatedBy": {
+                        "description": "UUID of the user that last updated this group.",
+                        "type": "string"
+                    }
+                }
+            },
+            "GroupId": {
+                "type": "object",
+                "properties": {
+                    "groupId": {
+                        "description": "ID of group.",
+                        "type": "integer"
+                    }
+                }
+            },
+            "LoginLink": {
+                "type": "object",
+                "properties": {
+                    "link": {
+                        "description": "An full http url",
+                        "type": "string"
+                    }
+                }
+            },
+            "OrgUnit": {
+                "type": "object",
+                "properties": {
+                    "externalId": {
+                        "description": "The external id (foreign key). Must not exceed 255 characters.",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "The id of the group.",
+                        "type": "integer"
+                    },
+                    "name": {
+                        "description": "The internal name of the project",
+                        "type": "string"
+                    },
+                    "parentId": {
+                        "description": "Unique identifier of the parent or *null* if there is no parent.",
+                        "type": "integer"
+                    },
+                    "type": {
+                        "description": "The organization unit type. The only type is *client* at the moment.",
+                        "type": "string"
+                    }
+                }
+            },
+            "OrgUnits": {
+                "type": "object",
+                "properties": {
+                    "orgUnits": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "orgUnits": {
+                "type": "array"
+            },
+            "Participation": {
+                "type": "object",
+                "properties": {
+                    "accessLink": {
+                        "description": "A link to access this particular participation. The link requires the user to login. Users that access the platform the first time must set a password. This value is null if this participation is not activated. ",
+                        "type": "string"
+                    },
+                    "activated": {
+                        "description": "True if this participation has been activated and can be used",
+                        "type": "boolean"
+                    },
+                    "activitiesCompleted": {
+                        "description": "The number of activities completed",
+                        "type": "number"
+                    },
+                    "activitiesTotal": {
+                        "description": "The total number of activities",
+                        "type": "number"
+                    },
+                    "errorMessage": {
+                        "description": "An optional error message that may describe why the participation is in error state.",
+                        "type": "string"
+                    },
+                    "expiration": {
+                        "description": "The timestamp when this participation will expire. Expiration never happens if this value is *null*.",
+                        "type": "string"
+                    },
+                    "externalId": {
+                        "description": "The external id (foreign key). Must not exceed 255 characters.",
+                        "type": "string"
+                    },
+                    "firstAccess": {
+                        "description": "The timestamp when the participant accessed the project for the first time. This value can be null",
+                        "type": "string"
+                    },
+                    "firstActivation": {
+                        "description": "The timestamp when this participation was first activated. This value can be null",
+                        "type": "string"
+                    },
+                    "firstMail": {
+                        "description": "The timestamp when the first mail was sent to this participant. This value can be null",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "The id of the group.",
+                        "type": "integer"
+                    },
+                    "inError": {
+                        "description": "True if this participation is in an error state. The user is not able to access participations that are in error state.",
+                        "type": "boolean"
+                    },
+                    "lastAccess": {
+                        "description": "The timestamp when the participant accessed the project the last time. This value can be null",
+                        "type": "string"
+                    },
+                    "lastActivation": {
+                        "description": "The timestamp when this participation was last activated. This value can be null",
+                        "type": "string"
+                    },
+                    "lastMail": {
+                        "description": "The timestamp when the last mail was sent to this participant. This value can be null",
+                        "type": "string"
+                    },
+                    "projectId": {
+                        "description": "The id of the project this participation belongs to",
+                        "type": "integer"
+                    },
+                    "userid": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "ProductFailure": {
+                "type": "object",
+                "properties": {
+                    "message": {
+                        "description": "Optional error message",
+                        "type": "string"
+                    },
+                    "productId": {
+                        "description": "A product id",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "The organization unit type. The only type is *client* at the moment.",
+                        "type": "string"
+                    }
+                }
+            },
+            "Project": {
+                "type": "object",
+                "properties": {
+                    "adminUrl": {
+                        "description": "URL to the page where project administration can be done. Administrative access is still required when accessing the url.",
+                        "type": "string"
+                    },
+                    "country": {
+                        "description": "The country code that best matches the organization unit. If unspecified the platform default will be set.",
+                        "type": "string"
+                    },
+                    "created": {
+                        "description": "The time this entry was created",
+                        "type": "string"
+                    },
+                    "createdBy": {
+                        "description": "The id of the user that created the project. If the creator is not known this value can be *null* or not specified",
+                        "type": "string"
+                    },
+                    "designId": {
+                        "description": "The id of the design this project should be based on",
+                        "type": "integer"
+                    },
+                    "externalId": {
+                        "description": "The external id (foreign key). Must not exceed 255 characters.",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "The id of the group.",
+                        "type": "integer"
+                    },
+                    "locale": {
+                        "description": "The primary locale for this project. Default value will be used if not specified",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "The internal name of the project",
+                        "type": "string"
+                    },
+                    "note": {
+                        "description": "The internal note field",
+                        "type": "string"
+                    },
+                    "orgId": {
+                        "description": "The id of the organization unit this project belongs to",
+                        "type": "integer"
+                    },
+                    "status": {
+                        "description": "Project status. Can be either ACTIVATED, NEW or DISABLED",
+                        "type": "string"
+                    },
+                    "timezone": {
+                        "description": "The main timezone for the project. Do not specify for default timezone",
+                        "type": "string"
+                    },
+                    "userDescription": {
+                        "description": "The description presented to participants. Do not specify for default value from design",
+                        "type": "string"
+                    },
+                    "userTitle": {
+                        "description": "The title presented to participants. Do not specify for default value from design",
+                        "type": "string"
+                    }
+                }
+            },
+            "ProjectTeamMember": {
+                "type": "object",
+                "properties": {
+                    "roles": {
+                        "description": "A list with client roles",
+                        "type": "array"
+                    },
+                    "userid": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "TeamRole": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "The internal name of the project",
+                        "type": "string"
+                    },
+                    "roleid": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "UpdateOrganizationUnit": {
+                "type": "object",
+                "properties": {
+                    "caller": {
+                        "description": "The id of the user that initiated this operation",
+                        "type": "string"
+                    },
+                    "clientNumber": {
+                        "description": "A client number. Sometimes used when communicating with external system. Must be unique if specified.",
+                        "type": "string"
+                    },
+                    "country": {
+                        "description": "The country code that best matches the organization unit. If unspecified the platform default will be set.",
+                        "type": "string"
+                    },
+                    "displayName": {
+                        "description": "The name shown for the organization unit",
+                        "type": "string"
+                    },
+                    "externalId": {
+                        "description": "The external id (foreign key). Must not exceed 255 characters.",
+                        "type": "string"
+                    },
+                    "parent": {
+                        "description": "A Organization Unit id of the parent Organization Unit (optional).",
+                        "type": "number"
+                    }
+                }
+            },
+            "UpdateProject": {
+                "type": "object",
+                "properties": {
+                    "country": {
+                        "description": "The country code that best matches the organization unit. If unspecified the platform default will be set.",
+                        "type": "string"
+                    },
+                    "locale": {
+                        "description": "The primary locale for this project. Default value will be used if not specified",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "The internal name of the project",
+                        "type": "string"
+                    },
+                    "note": {
+                        "description": "The internal note field",
+                        "type": "string"
+                    },
+                    "status": {
+                        "description": "Project status. Can be either ACTIVATED, NEW or DISABLED",
+                        "type": "string"
+                    },
+                    "timezone": {
+                        "description": "The main timezone for the project. Do not specify for default timezone",
+                        "type": "string"
+                    },
+                    "userDescription": {
+                        "description": "The description presented to participants. Do not specify for default value from design",
+                        "type": "string"
+                    },
+                    "userTitle": {
+                        "description": "The title presented to participants. Do not specify for default value from design",
+                        "type": "string"
+                    }
+                }
+            },
+            "User": {
+                "type": "object",
+                "properties": {
+                    "authorizationPossible": {
+                        "description": "True if the user can authorize herself\/himself",
+                        "type": "boolean"
+                    },
+                    "displayName": {
+                        "description": "The name shown for the organization unit",
+                        "type": "string"
+                    },
+                    "externalId": {
+                        "description": "The external id (foreign key). Must not exceed 255 characters.",
+                        "type": "string"
+                    },
+                    "firstLogin": {
+                        "description": "The timestamp when the first login was made. This value can be *null*.",
+                        "type": "string"
+                    },
+                    "firstName": {
+                        "description": "The first (given) name of the user",
+                        "type": "string"
+                    },
+                    "hardLock": {
+                        "description": "True if the user should be locked from the system",
+                        "type": "boolean"
+                    },
+                    "homeOrg": {
+                        "description": "The primary organization for the user. Must match the id of an Organization Unit.",
+                        "type": "number"
+                    },
+                    "id": {
+                        "description": "The id of the role",
+                        "type": "string"
+                    },
+                    "lastLogin": {
+                        "description": "The timestamp when the last login was made. This value can be *null*.",
+                        "type": "string"
+                    },
+                    "lastName": {
+                        "description": "The last name of the user (or surname)",
+                        "type": "string"
+                    },
+                    "locked": {
+                        "description": "Lock status. A locked user will not be able to access the platform.",
+                        "type": "boolean"
+                    },
+                    "prefs": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "primaryEmail": {
+                        "description": "The primary email for the user. Used for communication from the platform.",
+                        "type": "string"
+                    }
+                }
+            },
+            "prefs": {
+                "type": "object"
+            },
+            "UserGroup": {
+                "type": "object",
+                "properties": {
+                    "children": {
+                        "description": "Children User Groups.",
+                        "type": "array"
+                    },
+                    "globalId": {
+                        "description": "Global group ID if this group is based on a global group, otherwise null.",
+                        "type": "integer"
+                    },
+                    "groupId": {
+                        "description": "ID of group.",
+                        "type": "integer"
+                    },
+                    "name": {
+                        "description": "The internal name of the project",
+                        "type": "string"
+                    },
+                    "parent": {
+                        "description": "Optional ID of parent group.",
+                        "type": "integer"
+                    },
+                    "userGroup": {
+                        "description": "If of internal user group object that holds the members of this group.",
+                        "type": "integer"
+                    }
+                }
+            },
+            "children": {
+                "type": "array"
+            },
+            "UserId": {
+                "type": "object",
+                "properties": {
+                    "uuid": {
+                        "description": "UUID of user to add to this group.",
+                        "type": "string"
+                    }
+                }
+            },
+            "UserParticipationInfo": {
+                "type": "object",
+                "properties": {
+                    "accessLink": {
+                        "description": "A link to access this particular participation. The link requires the user to login. Users that access the platform the first time must set a password. This value is null if this participation is not activated. ",
+                        "type": "string"
+                    },
+                    "activated": {
+                        "description": "True if this participation has been activated and can be used",
+                        "type": "boolean"
+                    },
+                    "activitiesCompleted": {
+                        "description": "The number of activities completed",
+                        "type": "number"
+                    },
+                    "activitiesTotal": {
+                        "description": "The total number of activities",
+                        "type": "number"
+                    },
+                    "errorMessage": {
+                        "description": "An optional error message that may describe why the participation is in error state.",
+                        "type": "string"
+                    },
+                    "expiration": {
+                        "description": "The timestamp when this participation will expire. Expiration never happens if this value is *null*.",
+                        "type": "string"
+                    },
+                    "externalId": {
+                        "description": "The external id (foreign key). Must not exceed 255 characters.",
+                        "type": "string"
+                    },
+                    "firstAccess": {
+                        "description": "The timestamp when the participant accessed the project for the first time. This value can be null",
+                        "type": "string"
+                    },
+                    "firstActivation": {
+                        "description": "The timestamp when this participation was first activated. This value can be null",
+                        "type": "string"
+                    },
+                    "firstMail": {
+                        "description": "The timestamp when the first mail was sent to this participant. This value can be null",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "The id of the group.",
+                        "type": "integer"
+                    },
+                    "inError": {
+                        "description": "True if this participation is in an error state. The user is not able to access participations that are in error state.",
+                        "type": "boolean"
+                    },
+                    "lastAccess": {
+                        "description": "The timestamp when the participant accessed the project the last time. This value can be null",
+                        "type": "string"
+                    },
+                    "lastActivation": {
+                        "description": "The timestamp when this participation was last activated. This value can be null",
+                        "type": "string"
+                    },
+                    "lastMail": {
+                        "description": "The timestamp when the last mail was sent to this participant. This value can be null",
+                        "type": "string"
+                    },
+                    "projectId": {
+                        "description": "The id of the project this participation belongs to",
+                        "type": "integer"
+                    },
+                    "projectName": {
+                        "description": "The internal name of the project",
+                        "type": "string"
+                    },
+                    "projectOrgId": {
+                        "description": "The organization id",
+                        "type": "integer"
+                    },
+                    "projectStatus": {
+                        "description": "Project status. Can be either ACTIVATED, NEW or DISABLED",
+                        "type": "string"
+                    },
+                    "projectThumbnail": {
+                        "description": "An url to the project thumbnail. This url can be accessed by anyone.",
+                        "type": "string"
+                    },
+                    "projectUserTitle": {
+                        "description": "The title presented to participants",
+                        "type": "string"
+                    }
+                }
+            },
+            "UserPreferences": {
+                "type": "object",
+                "properties": {
+                    "locale": {
+                        "description": "The primary locale for this project. Default value will be used if not specified",
+                        "type": "string"
+                    }
+                }
+            },
+            "UserWithPermissions": {
+                "type": "object"
+            }
+        }
+    }
+}
