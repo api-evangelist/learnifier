@@ -1,5 +1,5 @@
 {
-    "id": "73de22ce43cfe97ed4b2c706e7f5fcce",
+    "id": "43494bc23b785150f5e5059a4e677b30",
     "name": "Learnifier API",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "67f18efd5649d5d9d419712cc67bf6e2",
+            "id": "4dad3d95302c2362a6bb21e9d3c393e7",
             "name": "Lists all global course design templates",
             "url": "httplearnifier.com\/\/coursedesigns",
             "description": "Lists all global course design templates. Only api callers that have full access can call this method.",
@@ -29,11 +29,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "collectionId": "43494bc23b785150f5e5059a4e677b30",
             "rawModeData": ""
         },
         {
-            "id": "f823a60ce6f66afafb5c9276d88a7c60",
+            "id": "32a1ed78a733d2cd07d34fa08b34e545",
             "name": "Get Organization Unit with External Id",
             "url": "httplearnifier.com\/\/extorgunit",
             "description": "Returns information about the organization unit with the specified external id.\n",
@@ -60,11 +60,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "collectionId": "43494bc23b785150f5e5059a4e677b30",
             "rawModeData": ""
         },
         {
-            "id": "f4acfcac85cb5c509cbe13c987a045a0",
+            "id": "fd02d441e2d99c52e1559e2febb7b9de",
             "name": "Gets a participation by external id",
             "url": "httplearnifier.com\/\/extparticipation",
             "description": "Gets a participation by external id.",
@@ -91,11 +91,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "collectionId": "43494bc23b785150f5e5059a4e677b30",
             "rawModeData": ""
         },
         {
-            "id": "6a22038261c40265849cf3fab8655922",
+            "id": "2355ee9941948a00e5598b61edce940b",
             "name": "Gets Organization Unit by external id",
             "url": "httplearnifier.com\/\/extproject",
             "description": "Gets an Organization Unit by external id",
@@ -122,11 +122,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "collectionId": "43494bc23b785150f5e5059a4e677b30",
             "rawModeData": ""
         },
         {
-            "id": "36b227099e542603bf0d7f0091a67f40",
+            "id": "85df260ad6cc2f4e9e6c05783f714849",
             "name": "Gets a user by external id",
             "url": "httplearnifier.com\/\/extuser",
             "description": "Gets a user by external id.",
@@ -153,11 +153,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "collectionId": "43494bc23b785150f5e5059a4e677b30",
             "rawModeData": ""
         },
         {
-            "id": "22df03d1dcb16940cf0d06b0ee61b662",
+            "id": "61cba008354952c0fb99c0fa9821ef09",
             "name": "List Global User Groups.",
             "url": "httplearnifier.com\/\/globalusergroups",
             "description": "Returns a list of Global User Groups. Global User Groups are set up for the realm, and will generate groups that can be used on the client level.\n",
@@ -176,11 +176,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "collectionId": "43494bc23b785150f5e5059a4e677b30",
             "rawModeData": ""
         },
         {
-            "id": "dcba9ca7c7e3365bee752fc4c6628dde",
+            "id": "70378b70ecdfdcfcec8d32c86b91cbe1",
             "name": "List of all users in group.",
             "url": "httplearnifier.com\/\/globalusergroups\/{groupid}\/members",
             "description": "Returns a list of all members in User Groups that are based on the Global Group with this groupid.\n",
@@ -207,11 +207,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "collectionId": "43494bc23b785150f5e5059a4e677b30",
             "rawModeData": ""
         },
         {
-            "id": "595786516d73d5f0d15e86a231a991d5",
+            "id": "7703ee57614d42a35944bb6853eba6d4",
             "name": "Organization Units",
             "url": "httplearnifier.com\/\/orgunits",
             "description": "The orgunits endpoint returns information about the available organization units (orgunits).\nThe response includes the display name, internal and external id and client number.\n",
@@ -230,11 +230,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "collectionId": "43494bc23b785150f5e5059a4e677b30",
             "rawModeData": ""
         },
         {
-            "id": "320de5cc952cf1ce0e0ed72fbce8c8a5",
+            "id": "a29ee6b22ba5200f4151b547680de45f",
             "name": "Adds an Organization Unit",
             "url": "httplearnifier.com\/\/orgunits",
             "description": "Adds an Organization Unit",
@@ -253,11 +253,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "collectionId": "43494bc23b785150f5e5059a4e677b30",
             "rawModeData": ""
         },
         {
-            "id": "4c5706641d864c9dfd2ddb5137822f06",
+            "id": "88c8fe02bc70062f8c2bbf3f390b4995",
             "name": "Get Organization Unit",
             "url": "httplearnifier.com\/\/orgunits\/{orgid}",
             "description": "Returns information about the specified organization unit.\nThe response includes the display name, internal and external id and client number.\n",
@@ -284,11 +284,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "collectionId": "43494bc23b785150f5e5059a4e677b30",
             "rawModeData": ""
         },
         {
-            "id": "926bc8a1371575dbfcd16cbffbadde7b",
+            "id": "4db761da9f41f4691837e1fe4d3fcc25",
             "name": "Updates an Organization Unit",
             "url": "httplearnifier.com\/\/orgunits\/{orgid}",
             "description": "Adds an Organization Unit",
@@ -315,11 +315,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "collectionId": "43494bc23b785150f5e5059a4e677b30",
             "rawModeData": ""
         },
         {
-            "id": "fb45a6f6646a6a814be635c2100f653b",
+            "id": "a688c8828b3da40bd0274c2856f3bcc2",
             "name": "Organization Unit Projects",
             "url": "httplearnifier.com\/\/orgunits\/{orgid}\/projects",
             "description": "Returns the available projects for the organization unit\n",
@@ -346,11 +346,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "collectionId": "43494bc23b785150f5e5059a4e677b30",
             "rawModeData": ""
         },
         {
-            "id": "721497eb0af1c8f3071ccf70d6143a5d",
+            "id": "886d813a569ec0a1240f81cc69946a11",
             "name": "Create project",
             "url": "httplearnifier.com\/\/orgunits\/{orgid}\/projects",
             "description": "Creates a new project\n",
@@ -377,11 +377,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "collectionId": "43494bc23b785150f5e5059a4e677b30",
             "rawModeData": ""
         },
         {
-            "id": "96c61da0303612a425c2287cc70ccf96",
+            "id": "d9224d204a5e7832bb8c5b22d2e0afd7",
             "name": "Deletes the project",
             "url": "httplearnifier.com\/\/orgunits\/{orgid}\/projects\/{projectid}",
             "description": "Deletes the project. The project can only be deleted if the project do not contain any participants.\n",
@@ -415,11 +415,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "collectionId": "43494bc23b785150f5e5059a4e677b30",
             "rawModeData": ""
         },
         {
-            "id": "f608af104bbb72dcec221536933c6806",
+            "id": "9824f488c4f50a4ae96c6be7f7bd7207",
             "name": "Project information",
             "url": "httplearnifier.com\/\/orgunits\/{orgid}\/projects\/{projectid}",
             "description": "Returns project information\n",
@@ -453,11 +453,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "collectionId": "43494bc23b785150f5e5059a4e677b30",
             "rawModeData": ""
         },
         {
-            "id": "d1092f922fb7447e81bef58300089f3f",
+            "id": "bd37bffab8cfd63f3b3b8a2250cc636c",
             "name": "Update project information",
             "url": "httplearnifier.com\/\/orgunits\/{orgid}\/projects\/{projectid}",
             "description": "Updates information about a project. Values are only updated if the fields are specified in the input\n",
@@ -491,11 +491,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "collectionId": "43494bc23b785150f5e5059a4e677b30",
             "rawModeData": ""
         },
         {
-            "id": "b9e5f812900de8a91216a308b52e7ee2",
+            "id": "1526761ff45d261d054ff6368781cf45",
             "name": "Project participants",
             "url": "httplearnifier.com\/\/orgunits\/{orgid}\/projects\/{projectid}\/participants",
             "description": "Returns project participants\n",
@@ -529,11 +529,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "collectionId": "43494bc23b785150f5e5059a4e677b30",
             "rawModeData": ""
         },
         {
-            "id": "24551c8177543d1c58b4f5d2b398d964",
+            "id": "c8dc1dee0d57eb84f19a896feca1cbe9",
             "name": "Add participant",
             "url": "httplearnifier.com\/\/orgunits\/{orgid}\/projects\/{projectid}\/participants",
             "description": "Add a user to the project. Participant information is created for the user. In the body object, only one of either email or userid must be specified. The participant needs to be activated before it the user can access it.\n",
@@ -567,11 +567,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "collectionId": "43494bc23b785150f5e5059a4e677b30",
             "rawModeData": ""
         },
         {
-            "id": "ff01651aa4f43e4523c31987101b7617",
+            "id": "9b147324b81adac1fa792b74d7d96939",
             "name": "Deletes a participant",
             "url": "httplearnifier.com\/\/orgunits\/{orgid}\/projects\/{projectid}\/participants\/${participantId}",
             "description": "Deletes a participant. The user itself will still remain but any state related to the project will be deleted. \nIt might not be possible due to constraints from the products in the project to delete the participant. However\nthis can only be determined at the time of the delete. If a delete fails the participant will have their inError\nflag set.\n",
@@ -612,11 +612,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "collectionId": "43494bc23b785150f5e5059a4e677b30",
             "rawModeData": ""
         },
         {
-            "id": "225b98516b5e044d248fda1a767f00c8",
+            "id": "b21b0a884c2ad719030befa5cab24297",
             "name": "Activate participant",
             "url": "httplearnifier.com\/\/orgunits\/{orgid}\/projects\/{projectid}\/participants\/${participantId}\/activate",
             "description": "Activates a participant so that it can be used\n",
@@ -657,11 +657,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "collectionId": "43494bc23b785150f5e5059a4e677b30",
             "rawModeData": ""
         },
         {
-            "id": "682619286550f9600817e5bc1c034ab4",
+            "id": "2137901a998fb2ca0bc91e03c89514cc",
             "name": "Participant login link",
             "url": "httplearnifier.com\/\/orgunits\/{orgid}\/projects\/{projectid}\/participants\/${participantId}\/loginlink",
             "description": "Returns a single sign on link for the participant. The link is only usable once and should be used directly. The link expires after a few minutes.\n\nThis operation requires the *login link* permission.\n",
@@ -702,11 +702,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "collectionId": "43494bc23b785150f5e5059a4e677b30",
             "rawModeData": ""
         },
         {
-            "id": "954db84607d94c39db64350b4d385ea1",
+            "id": "300cc787b6221ad51bcbf8ee4dc31684",
             "name": "Project team members",
             "url": "httplearnifier.com\/\/orgunits\/{orgid}\/projects\/{projectid}\/teammembers",
             "description": "Returns the project team members. A team member is a ....\n",
@@ -740,11 +740,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "collectionId": "43494bc23b785150f5e5059a4e677b30",
             "rawModeData": ""
         },
         {
-            "id": "cd06a7a595d9454de18aa7e6bdf32dde",
+            "id": "a3e1327b79eba628882958776b48c373",
             "name": "List User Groups.",
             "url": "httplearnifier.com\/\/orgunits\/{orgid}\/usergroups",
             "description": "Returns a list of User Groups for the org unit.\n",
@@ -771,11 +771,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "collectionId": "43494bc23b785150f5e5059a4e677b30",
             "rawModeData": ""
         },
         {
-            "id": "ebe891c0a45ed464232823dcaba0e445",
+            "id": "29da3c6d806b6b95ed5cdb7525d796e8",
             "name": "Create a User Group.",
             "url": "httplearnifier.com\/\/orgunits\/{orgid}\/usergroups",
             "description": "Create a User Group.\n",
@@ -802,11 +802,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "collectionId": "43494bc23b785150f5e5059a4e677b30",
             "rawModeData": ""
         },
         {
-            "id": "13c1bffe64ab2cc34dcc7370cf741fae",
+            "id": "826b9e93c19ad63a8a53e3737cc078cb",
             "name": "Get user group",
             "url": "httplearnifier.com\/\/orgunits\/{orgid}\/usergroups\/{groupid}",
             "description": "Returns single User Group.\n",
@@ -840,11 +840,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "collectionId": "43494bc23b785150f5e5059a4e677b30",
             "rawModeData": ""
         },
         {
-            "id": "f8591940fa83e3c70c57d21d81565dce",
+            "id": "0399a99a37741f1ce7b8a242ed8484f3",
             "name": "List of all users in group.",
             "url": "httplearnifier.com\/\/orgunits\/{orgid}\/usergroups\/{groupid}\/members",
             "description": "Returns a list of all members in User Groups that are based on the Global Group with this groupid.\n",
@@ -878,11 +878,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "collectionId": "43494bc23b785150f5e5059a4e677b30",
             "rawModeData": ""
         },
         {
-            "id": "fddd23af27cea17a6f50a0f73d3b72b0",
+            "id": "a0e28545ee8276d71acabc5b37c6dc6b",
             "name": "Add user group member.",
             "url": "httplearnifier.com\/\/orgunits\/{orgid}\/usergroups\/{groupid}\/members",
             "description": "Adds a user to user group.\n",
@@ -916,11 +916,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "collectionId": "43494bc23b785150f5e5059a4e677b30",
             "rawModeData": ""
         },
         {
-            "id": "d7411e6c9b7756054c33ad1031fc484f",
+            "id": "b64dbdb7f9bbbf18bed4bdbadf74c9a2",
             "name": "Remove user group member.",
             "url": "httplearnifier.com\/\/orgunits\/{orgid}\/usergroups\/{groupid}\/members\/{uuid}",
             "description": "Removes a user from a user group.\n",
@@ -961,11 +961,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "collectionId": "43494bc23b785150f5e5059a4e677b30",
             "rawModeData": ""
         },
         {
-            "id": "074302b44bd3688d41946f1174aaed52",
+            "id": "24cd92046d52ef1bf7f87fb3fcd644db",
             "name": "Lists all users",
             "url": "httplearnifier.com\/\/users",
             "description": "Lists all users. Only api callers that have full access can call this method.",
@@ -999,11 +999,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "collectionId": "43494bc23b785150f5e5059a4e677b30",
             "rawModeData": ""
         },
         {
-            "id": "3f15049d78aad240b7a51393f6face18",
+            "id": "0a657f11c5c73e337a05431cdc56dce7",
             "name": "Adds a user",
             "url": "httplearnifier.com\/\/users",
             "description": "Adds a user. No two users can have the same email address. Email is saved WITH case but compared regardless of case. Email can be changed for a user assuming it doesn't cause a conflict.",
@@ -1022,11 +1022,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "collectionId": "43494bc23b785150f5e5059a4e677b30",
             "rawModeData": ""
         },
         {
-            "id": "afc91077c509c1678bb58f6969f5b572",
+            "id": "f93691654b9525d0b38c96fa8b418c3c",
             "name": "User information",
             "url": "httplearnifier.com\/\/users\/{userid}",
             "description": "Returns information about a user\n",
@@ -1053,11 +1053,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "collectionId": "43494bc23b785150f5e5059a4e677b30",
             "rawModeData": ""
         },
         {
-            "id": "32ce0d0e83a3de3c66600b0c3742aa23",
+            "id": "5bb0989ceed2b61f8a3e461eabd2b2cd",
             "name": "Updates user information",
             "url": "httplearnifier.com\/\/users\/{userid}",
             "description": "Updates a user. All values that have a key defined in the input will be set. So if a value should not be updated omit it totally from the input, otherwise it will be unset.",
@@ -1084,11 +1084,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "collectionId": "43494bc23b785150f5e5059a4e677b30",
             "rawModeData": ""
         },
         {
-            "id": "b01f6dcf41bcf5f6adbd459d1d82e47b",
+            "id": "725e9b22e3f1f6875f8aea15a97201ca",
             "name": "User profile picture",
             "url": "httplearnifier.com\/\/users\/{userid}\/pic?key={APIKEY}",
             "description": "Returns a thumbnail picture of the user. This can either be a selected picture or an auto generated image. This method doesn't require a full sign in. The api key is sufficient.\nThe image is square and is likely, but not necessary, to be in 128x128 PNG format. However the format will always be either PNG, JPEG or GIF.\n",
@@ -1122,11 +1122,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "collectionId": "43494bc23b785150f5e5059a4e677b30",
             "rawModeData": ""
         },
         {
-            "id": "53cbc84e1d46c7caa04a6e2f15fd619a",
+            "id": "6a2d120f86f984dcaa5244dbd8f486ad",
             "name": "Returns information about the projects the user is a participant in.",
             "url": "httplearnifier.com\/\/users\/{userid}\/projectParticipations",
             "description": "Returns information about the projects the user is a participant in. Only the projects that the current token have access to will be listed.\n",
@@ -1153,7 +1153,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "73de22ce43cfe97ed4b2c706e7f5fcce",
+            "collectionId": "43494bc23b785150f5e5059a4e677b30",
             "rawModeData": ""
         }
     ]
